@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html class="gr__login_johnshopkins_edu"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+ <meta http-equiv="Pragma" content="no-cache">
+ <meta http-equiv="Expires" content="-1">
+ <noscript><META HTTP-EQUIV="refresh" content="0; URL=https://login.johnshopkins.edu/cgi-bin/allinonelogin.pl?BASIC=TRUE&AUTHDB=PROD&AUTHLEVEL=RISK&RD=20120821&TYPE=33554432&REALMOID=06-83105949-5f2a-444a-a402-eb219b40dbba&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=-SM-XW1ryb4A86h9H5sR%2bFe7g%2fm9NnDy2YJDDcJT56Io2cbok5UX7A9gYAwgEqY%2baWNn&TARGET=-SM-HTTP%3a%2f%2frestricted%2ehopkinsmedicine%2eorg%2fwebcenter%2ftraining%2f&TIMESTRING=1491988516"></noscript>
+        <!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+<style>
+        html, body
+        {
+                background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQyJSIgc3RvcC1jb2xvcj0iIzIwN2NjYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+) fixed no-repeat;
+                background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(32,124,202,1) 42%, rgba(125,185,232,1) 100%) fixed;
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(42%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1))) fixed;
+                background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(32,124,202,1) 42%,rgba(125,185,232,1) 100%) fixed;
+                background: -o-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(32,124,202,1) 42%,rgba(125,185,232,1) 100%) fixed;
+                background: -ms-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(32,124,202,1) 42%,rgba(125,185,232,1) 100%) fixed;
+
+                background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(32,124,202,1) 42%,rgba(125,185,232,1) 100%) fixed;
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); 
+                height: 100%; 
+                width: 100%; 
+                margin: 0; 
+                padding: 0; 
+                border: none; 
+                overflow: auto; 
+                background-color: #fff;
+        }
+
+        a, a:visited {
+                text-decoration: none;
+                color: #4040ff;
+        }
+        a:hover {
+                text-decoration: underline;
+        }
+
+        #mainLoginArea {
+                background: url('/smlogin/images/bg_banner6.jpg') no-repeat;
+                background-position: right top;
+                background-color: #e1e1e1;
+                padding: 20px;
+                margin-top: 10px;
+                margin-right: 20px;
+                -moz-border-radius: 15px;
+                border-radius: 15px;
+                -moz-box-shadow: 3px 3px 2px #888;
+                -webkit-box-shadow: 3px 3px 3px #888;
+                box-shadow: 3px 3px 2px #888;
+                width: 600px;
+                /*height: 320px;*/
+                border: 1px solid grey;
+                position: relative;
+                behavior: url(/smlogin/css/PIE.htc);
+        }
+
+        #page {
+                border: none;
+                top: 10%;
+                position: relative;
+                height: 100%;
+                width: 100%; 
+        }
+
+
+        .inputField { 
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                border-radius: 15px;
+                font-family: Arial,Verdana,sans-serif;
+                padding:3px; 
+        }
+
+        .css3button {
+                font-family: Arial,Verdana,sans-serif;
+                font-size: 14px;
+                color: #160094;
+                padding: 2px 20px;
+
+                background: #ffffff; /* Old browsers */
+                /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+                background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYyJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiNWI1YjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+                background: -moz-linear-gradient(top,  #ffffff 0%, #eeeeee 62%, #b5b5b5 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(62%,#eeeeee), color-stop(100%,#b5b5b5)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  #ffffff 0%,#eeeeee 62%,#b5b5b5 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  #ffffff 0%,#eeeeee 62%,#b5b5b5 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  #ffffff 0%,#eeeeee 62%,#b5b5b5 100%); /* IE10+ */
+                background: linear-gradient(to bottom,  #ffffff 0%,#eeeeee 62%,#b5b5b5 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b5b5b5',GradientType=0 ); /* IE6-8 */
+
+
+                border-radius: 10px;
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+                border: 1px solid #eee;
+                -moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5),inset 0px 0px 3px rgba(255,255,255,1);
+                -webkit-box-shadow:0px 1px 3px rgba(000,000,000,0.5),inset 0px 0px 3px rgba(255,255,255,1);
+                text-shadow:0px -1px 0px rgba(000,000,000,0.2),0px 1px 0px rgba(255,255,255,1);
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(enabled=false)";
+                position: relative;
+                -pie-background: linear-gradient(#ffffff 0%, #ffffff 50%, #b5b5b5) 0 0 / 50px #b5b5b5;
+                behavior: url(/smlogin/css/PIE.htc);
+        }
+
+        .infoText {
+                font-size: 14px;
+                font-weight: normal;
+                color: #000000;
+                font-family: Arial,Verdana,sans-serif;
+        }
+
+        .infoTextBlue {
+                font-size: 10px;
+                font-weight: normal;
+                color: #0000cc;
+                font-family: Arial,Verdana,sans-serif;
+                border: 1px solid #ccdaff;
+                padding: 10px;
+                background: #f5f5f5;
+                margin: 5px 5px 10px 0px;
+        }
+        .infoTextRed {
+                font-size: 12px;
+                font-weight: normal;
+                color: #cc0000;
+                font-family: Arial,Verdana,sans-serif;
+                padding: 0px 2px 2px 2px;
+                line-height: 3em;
+        }
+
+
+        .infotextForgotPassword {
+                font-size: 12px;
+                font-weight: normal;
+                color: #0000cc;
+                font-family: Arial,Verdana,sans-serif;
+                border: 0px solid #ccdaff;
+                padding: 0px 0px 0px 0px;
+                line-height: 2em;
+                text-align: center;
+                vertical-align: bottom;
+        }
+        .infotextNotice {
+                font-size: 16px;
+                font-weight: bold;
+                color: #993300;
+                font-family: Arial,Verdana,sans-serif;
+                border: 2px solid #ffdacc;
+                padding: 5px;
+                background: #f5f5f5;
+                text-align: center;
+        }
+
+        .redLight {
+                padding-left: 2px;
+                color: #FF0000;
+        }
+
+        .greenLight {
+                padding-left: 2px;
+                color: #0E641A;
+        }
+
+        .yellowLight {
+                padding-left: 2px;
+                color: #FF8204;
+        }
+
+        .formTableStyle {
+                padding-bottom: 0px;
+        }
+
+        .formTableStyle td {
+                vertical-align: top;
+                text-size: small;
+                font-family: Arial,Verdana,sans-serif;
+                padding-right: 7px;
+                font-size: 14px;
+        }
+
+        .smallTextBoxText {
+                font-family: Arial,Verdana,sans-serif;
+                vertical-align: top;
+        }
+
+        #legalese {
+                width: 600px;
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+                font-size: 10px;
+                font-weight: normal;
+                line-height: 1.5em;
+                color: black;
+                font-family: Arial,Verdana,sans-serif;
+                text-align: center;
+
+        } 
+
+        .legaleseText{
+                width: 600px;
+                margin: 0px 0px 0px 0px;
+                padding: 5px 5px 5px 5px;
+                font-size: 10px;
+                font-weight: normal;
+                line-height: 1.5em;
+                color: black;
+                font-family: Arial,Verdana,sans-serif;
+        } 
+
+        .detailsese
+        {
+                width: 600px;
+                margin: 0px 0px 0px 0px;
+                padding: 5px 5px 5px 5px;
+                font-size: 10px;
+                font-weight: normal;
+                line-height: 1.5em;
+                color: black;
+                font-family: Arial,Verdana,sans-serif;
+                text-align: justify;
+        }
+
+        .nesting details
+        {
+                display: none;
+        }
+
+        .nesting:hover > details { display: block;}
+
+        #Footer{
+                padding: 5px 5px 5px 5px;
+                font-size: 10px;
+                font-weight: normal;
+
+                color: #e1e1e1;
+                font-family: Arial,Verdana,sans-serif;
+                /*
+                line-height: 1.5em;
+                margin: 0px 0px 0px 0px;
+                float: left;
+                width: 100%;
+                text-align: center;
+                */
+        } 
+        #Message{
+                position: absolute;
+                width: 394px;
+                left:38%;
+                top: 10%;
+                background-color: #FFF;
+                margin: 0px;
+                padding: 2px 2px 2px 2px;
+                font-size: 12px;
+                /* font-weight: bold; */
+                line-height: 1.5em;
+                color: #000000;
+                font-family: Arial,Verdana,sans-serif;
+                border-top: 3px solid #B41D1D;
+                border-bottom: 3px solid #931717;
+                border-left: 3px solid #B41D1D;
+                border-right: 3px solid #931717;
+                visibility: hidden;
+                z-index: 2;
+        }
+
+        #MessageNotAuth{
+                float: center;
+                width: 90%;
+                background-color: #FFF;
+                margin:0 auto;
+                padding: 10px;
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 1.5em;
+                color: #000000;
+                font-family: Arial,Verdana,sans-serif;
+                border-top: 3px solid #B41D1D;
+                border-bottom: 3px solid #931717;
+                border-left: 3px solid #B41D1D;
+                border-right: 3px solid #931717;
+        }
+
+        .button {
+                font-size: 12px;
+                height: 25px;
+                border-top: 1px solid #0303FD;
+                border-bottom: 1px solid #000099;
+                border-left: 1px solid #0303FD;
+                border-right: 1px solid #000099;
+                padding: 2px 12px 0px 12px;
+                color: #003399;
+                cursor: pointer;
+                background-image: url(/smlogin/images/bg_button.gif);
+        }
+</style>
+
+<script type="text/javascript" src="Do%20Not%20Bookmark%20-%20Johns%20Hopkins%20Enterprise%20Authentication%20-%20v9.7.0a-23%20-%20Do%20Not%20Bookmark_files/jquery-1.js"></script>
+ <script language="JavaScript" src="Do%20Not%20Bookmark%20-%20Johns%20Hopkins%20Enterprise%20Authentication%20-%20v9.7.0a-23%20-%20Do%20Not%20Bookmark_files/getelement.js" type="text/javascript"></script>
+  <script src="Do%20Not%20Bookmark%20-%20Johns%20Hopkins%20Enterprise%20Authentication%20-%20v9.7.0a-23%20-%20Do%20Not%20Bookmark_files/full.js"></script>
+  <script src="Do%20Not%20Bookmark%20-%20Johns%20Hopkins%20Enterprise%20Authentication%20-%20v9.7.0a-23%20-%20Do%20Not%20Bookmark_files/_core_v1_1.js" type="text/javascript"></script>
+  <script src="Do%20Not%20Bookmark%20-%20Johns%20Hopkins%20Enterprise%20Authentication%20-%20v9.7.0a-23%20-%20Do%20Not%20Bookmark_files/_md5.js" type="text/javascript"></script>
+
+ <script language="JavaScript1.2" type="text/javascript">
+ 
+ var message="............";
+ var basecolor="#D8DFEE";
+ var textcolor="#4C66A0";
+ var flashspeed = 100;
+ var n=0;
+ var flashing;
+ 
+ function crossref(number) {
+  var crossobj=document.all?eval("document.all.light"+number):e("light"+number);
+  return crossobj;
+ }
+
+ function changecolor() {
+  if (n!=0) {
+   for (m=0;m<message.length;m++) {
+    crossref(m).style.color = basecolor;
+   }
+  }
+  crossref(n).style.color = textcolor;
+  
+  if (n<message.length-1) {
+   n++;
+  }
+  else {
+   n=0;
+   clearInterval(flashing);
+   setTimeout("beginanimation()",10);
+   return;
+  }
+ }
+ function changePage(url) {
+  window.location = "https://" + url;
+ }
+
+ function showMessage(exptime) {
+  e("Message").innerHTML = '<img src=/smlogin/images/warn.gif>&nbsp;<span style="font-size:25px;"><B>Password Expiration Message</B></span><br><br><div align=center>Your password expires on <span class=expire>' + exptime + '</span> <br> Would you like to change your password? <br><br> <A HREF="https://my.jh.edu/portal/web/jhupub/login-changepassword" class=button>Now</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=button onClick="document.loginform.submit()">Later</span><br><br></div>';
+  Message.style.visibility = "visible";
+  e("mainLoginArea").style.opacity = ".5";
+  e("mainLoginArea").style.filter = "alpha(opacity=30)";
+ }
+
+ function showExpired() {
+  e("Message").innerHTML = '<img src=/smlogin/images/warn.gif>&nbsp;<span style="font-size:25px;"><B>Password Expiration Message</B></span><br><br><div align=center>Your account has been temporarily restricted because your password has expired.<br> Please reset your password to clear the restriction.<br><br> <A HREF="https://my.jh.edu/portal/web/jhupub/login-forgottenpassword" class=button>Click Here To Reset Your Password</A><br><br> </div>';
+  Message.style.visibility = "visible";
+  e("mainLoginArea").style.opacity = ".5";
+  e("mainLoginArea").style.filter = "alpha(opacity=30)";
+ }
+
+function showIssueWithDB() {
+  e("Message").innerHTML = '<img src=/smlogin/images/warn.gif>&nbsp;<span style="font-size:25px;"><B>Problem with Authentication</B></span><br><br><div align=center>We are currently experiencing a problem with authentication.<br> Please try again and if the problem persists please call the Help Desk (410-735-HELP).<br> <font color="red" size="1">Error Code: DB Unavailable.</FONT> <br><br><button type=button onclick="closeDialog();" >Close</button><br><br></div>';
+  Message.style.visibility = "visible";
+  e("mainLoginArea").style.opacity = ".5";
+  e("mainLoginArea").style.filter = "alpha(opacity=30)";
+ }
+
+function closeDialog()
+{
+$("#Message").remove();
+clearInterval(flashing);
+e('PASSWORD').focus();
+location.reload();
+}
+
+ 
+ function showNewID(newID) {
+  e("Message").innerHTML = '<img src=/smlogin/images/warn.gif>&nbsp;<span style="font-size:25px;"><B>New User ID Message</B></span><br><br><div align=center>You now have a JHED ID of <span class=expire>' + newID + '</span> <br> Please login with that ID and password instead.<br><br> <span class=button onClick="loginWithNewID(\'' + newID + '\')">Login with JHED ID</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="https://my.jh.edu/portal/web/jhupub/login-firsttimejheduser" class=button>Setup JHED ID</A><br><br></div>';
+  Message.style.visibility = "visible";
+  e("mainLoginArea").style.opacity = ".5";
+  e("mainLoginArea").style.filter = "alpha(opacity=30)";
+ }  
+ 
+ function loginWithNewID(newID) {
+  e('USER').value=newID;
+  e('resultdiv').innerHTML='';
+  resultdiv.className = 'default';
+  e('PASSWORD').focus();
+  loadInfo(3);
+ }
+
+ function beginanimation() {
+//  var messageString;
+//  messageString = '<font color="'+basecolor+'" size="+2">';
+//  for (m=0; m<message.length;m++) {
+//    messageString = messageString + '<span id="light'+m+'">'+message.charAt(m)+'</span>';
+//  }
+//  messageString = messageString + '</font>';
+//  e('loginbutton').innerHTML = messageString;
+  e('loginbutton').innerHTML = '<img src="/smlogin/images/ajax-loader.gif">';
+//  flashing=setInterval("changecolor()",flashspeed);
+ }
+
+  function addcustom() {
+   clearTimeout(getdbdatatimeout);
+   var eaname = '';
+   var eacomments = '<BR><BR><BR>';
+   var authlevel = 'RISK';
+   while((typeof e('textDisplay').innerHTML) != 'string') {
+    // Wait for existence of object
+   }
+   if (authlevel == "HIGH") {
+    e('textDisplay').innerHTML = '<TABLE BORDER=0 WIDTH=95%><TR><TD><FONT SIZE=+1><B>This site requires a higher level of security and requires that you login again.<BR><BR>Thank you.<BR><BR></B></FONT></TD></TR></TABLE>';
+   }
+   else if (authlevel == "OTP") {
+    e('textDisplay').innerHTML = '<TABLE BORDER=0 WIDTH=95%><TR><TD><FONT SIZE=+1><B>This site requires use of your Password and a One-Time Password (if you have a registered device) and requires that you enter them in the both in the Password field to log in.<BR><BR>If you do not have a registered One-Time Password device, you may enter just your Password in the Password field.<BR><BR>Thank you.<BR><BR></B></FONT></TD></TR></TABLE>';
+   }
+   else if (authlevel == "MFA") {
+    e('textDisplay').innerHTML = '<TABLE BORDER=0 WIDTH=95%><TR><TD><FONT SIZE=+1><B>This site requires multifactor authentication and requires that you login again.<BR><BR>Thank you.<BR><BR></B></FONT></TD></TR></TABLE>';
+   }
+   else if (authlevel == "ESA") {
+    e('textDisplay').innerHTML = '<TABLE BORDER=0 WIDTH=95%><TR><TD><FONT SIZE=+1><B>This site requires Enterprise Step-Up Authentication and requires that you login again.<BR><BR>Thank you.<BR><BR></B></FONT></TD></TR></TABLE>';
+   }
+   else if (authlevel == "ESA50") {
+    e('textDisplay').innerHTML = '<TABLE BORDER=0 WIDTH=95%><TR><TD><FONT SIZE=+1><B>This site requires Enterprise Increased Step-Up Authentication and requires that you login again.<BR><BR>Thank you.<BR><BR></B></FONT></TD></TR></TABLE>';
+   }
+   else if (authlevel == "RISK10") {
+    e('textDisplay').innerHTML = '<TABLE BORDER=0 WIDTH=95%><TR><TD><FONT SIZE=+1><B>This site requires a higher level of security and requires that you login again.<BR><BR>Thank you.<BR><BR></B></FONT></TD></TR></TABLE>';
+   }
+   else {
+    e('textDisplay').innerHTML = '<p style="margin-top: 0px;">The purpose of Johns Hopkins Enterprise Authentication is to provide a single sign-on functionality for our customers to access many applications with just one login.</p>';
+   }
+  }
+
+function ReadCookie(cookieName) {
+ var theCookie=""+document.cookie;
+ var ind=theCookie.indexOf(cookieName);
+ if (ind==-1 || cookieName=="") return "";
+ var ind1=theCookie.indexOf(';',ind);
+ if (ind1==-1) ind1=theCookie.length; 
+ return unescape(theCookie.substring(ind+cookieName.length+1,ind1));
+}
+
+function SetCookie(cookieName,cookieValue) {
+ document.cookie = cookieName+"="+escape(cookieValue);
+}
+ 
+function loadInfo(linkName){
+ Message.style.visibility = "hidden";
+// e("mainLoginArea").style.opacity = "1";
+// e("mainLoginArea").style.filter = "alpha(opacity=100)";
+ if (linkName=="1") {
+  e('contentMenuspan').innerHTML = '<div class="controls"> Enterprise Authentication Info </div>';
+  e("textDisplay").innerHTML = e("logininfo").innerHTML;
+ }
+ if (linkName=="2") {
+  e('textDisplay').innerHTML = "<TABLE BORDER=0 WIDTH=95%><TR><TD>" + e("eacomments").innerHTML + "</TD></TR></TABLE>";
+ }
+ if (linkName=="3") {
+  e("leftcolumn").style.display = "inline";
+  e("rightcolumn").style.display = "inline";
+  e("troublelink").style.display = "inline";
+ }
+}
+
+function showDetailese() {
+        $("#detailsDiv").toggle();
+}
+$(document).ready(function () {
+        $("#detailsDiv").toggle();
+//        $("#USER").focus();
+});
+</script>
+<!--[if lte IE 9]>
+<script>
+$(document).ready(function () {
+  $("#USER").val('Login ID').focus(function(){if(this.value == 'Login ID')this.value=''}).blur(function(){if(this.value==='')this.value='Login ID'});
+  $("#PASSWORD").val('Password').focus(function(){if(this.value == 'Password')this.value=''}).blur(function(){if(this.value==='')this.value='Password'});
+//  $("#USER").focus();
+});
+</script>
+<![endif]-->
+
+<!--[if !IE]><!-->
+<script>
+$(document).ready(function () {
+  $("#USER").focus();
+});
+</script>
+<!--<![endif]-->
+
+<!--[if IE 8]>
+<style type="text/css">
+ button.css3button {
+  background-color: #eee;
+ }
+</style>
+<![endif]-->
+
+
+<title>Do Not Bookmark - Johns Hopkins Enterprise Authentication - v9.7.0a-23 - Do Not Bookmark</title>
+</head>
+ <body data-gr-c-s-loaded="true">
+ <div id="page" align="center">
+  <div id="Message"></div>
+  <div id="mainLoginArea" align="left">
+   <div>
+    <img src="Do%20Not%20Bookmark%20-%20Johns%20Hopkins%20Enterprise%20Authentication%20-%20v9.7.0a-23%20-%20Do%20Not%20Bookmark_files/el6.png">
+   </div>
+   <br>
+   <table id="formTable" class="formTableStyle">
+    <tbody><tr>
+     <td style="min-width: 240px">
+      <span class="infoText">Enter your Login ID and Password</span>
+      <br>
+      <br>
+      <form method="POST" action="https://login.johnshopkins.edu/siteminderagent/forms/esalogin.fcc?TYPE=33554432&amp;SMAGENTNAME=-SM-XW1ryb4A86h9H5sR+Fe7g/m9NnDy2YJDDcJT56Io2cbok5UX7A9gYAwgEqY+aWNn&amp;REALMOID=06-83105949-5f2a-444a-a402-eb219b40dbba&amp;TARGET=-SM-HTTP%3a%2f%2frestricted%2ehopkinsmedicine%2eorg%2fwebcenter%2ftraining%2f&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET" name="loginform" onsubmit="return false;">
+       <!-- <span class="infoText">Login ID:</span> -->
+       <input id="USER" name="USER" class="inputField" size="30" onkeypress="checkkey(event);" autocomplete="OFF" placeholder="Login ID" style="padding-left: 10px" type="text">
+       <br>
+       <br>
+       <!-- <span class="infoText">Password:</span> -->
+       <input value="" id="PASSWORD" name="PASSWORD" class="inputField" size="30" autocomplete="OFF" onkeypress="checkkey(event)" placeholder="Password" style="padding-left: 10px" type="password">
+       <input name="doit" id="doit" type="HIDDEN">
+       <input name="eatarget" id="eatarget" value="-SM-HTTP%3a%2f%2frestricted%2ehopkinsmedicine%2eorg%2fwebcenter%2ftraining%2f" type="HIDDEN">
+       <input name="authlevelform" id="eatarget" value="RISK" type="HIDDEN">
+       <input name="ADBASEDN" id="ADBASEDN" value="" type="HIDDEN">
+       <input name="AUTHDB" id="AUTHDB" value="PROD" type="HIDDEN">
+       <input name="TOKEN" id="TOKEN" type="HIDDEN">
+       <input name="RISK" id="RISK" type="HIDDEN">
+       <input name="fp5" id="fp5" value="User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:52.0) Gecko/20100101 Firefox/52.0
+Language: en-US
+Color-Depth: 24
+Resolution: 768x1366
+TimeZoneOffSet: -360
+SessionStorage: true
+hasLocalStorage: true
+indexedDB: true
+addBehavior: undefined
+openDatabase: undefined
+cpuClass: undefined
+Platform: Win32
+DoNotTrack: unspecified
+Plugins: 
+CanvasFingerprint: data:image/png;base64,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" type="hidden">
+       <input name="os" id="os" value="" type="hidden">
+       <input name="osbits" id="osbits" value="" type="hidden">
+       <input name="timezone" id="timezone" value="" type="hidden">
+       <input name="display" id="display" value="" type="hidden">
+       <input name="useragent" id="useragent" value="" type="hidden">
+       <input name="browser" id="browser" value="" type="hidden">
+       <input name="pluginsdetail" id="pluginsdetail" value="" type="hidden">
+       <input name="languages" id="languages" value="" type="hidden">
+       <input name="fonts" id="fonts" value="" type="hidden">
+       <input name="flash" id="flash" value="" type="hidden">
+       <input name="silverlight" id="silverlight" value="" type="hidden">
+       <input name="java" id="java" value="" type="hidden">
+       <input name="cookies" id="cookies" value="" type="hidden">
+       <script>
+         var fp5 = new Fingerprint({canvas: true, ie_activex: true, screen_resolution: true});
+         var fpdata = fp5.get();
+         document.getElementById('fp5').value = fpdata;
+         document.getElementById('os').value = fingerprint_os();
+         document.getElementById('osbits').value = fingerprint_bt();
+         document.getElementById('timezone').value = fingerprint_timezone();
+         document.getElementById('display').value = fingerprint_display();
+         document.getElementById('useragent').value = fingerprint_useragent();
+         document.getElementById('browser').value = fingerprint_browser();
+         document.getElementById('pluginsdetail').value = fingerprint_plugins();
+         document.getElementById('languages').value = fingerprint_language();
+         document.getElementById('fonts').value = fingerprint_fonts();
+         document.getElementById('silverlight').value = fingerprint_silverlight();
+         document.getElementById('java').value = fingerprint_java();
+         document.getElementById('cookies').value = fingerprint_cookie();
+       </script>
+       <div style="padding-top: 10px;" align="left"><div id="loginbutton" style="float: left;" onclick="buttonclick();return true;"><input id="submit1" name="submit1" class="css3button gradient" value="Login" type="button"></div>
+       <div id="resultdiv" style="float: left;">&nbsp;</div></div>
+      </form>
+     </td>
+     <td>
+      <div class="smallTextBoxText">
+       
+       <div id="textDisplay"><p style="margin-top: 0px;">The purpose of 
+Johns Hopkins Enterprise Authentication is to provide a single sign-on 
+functionality for our customers to access many applications with just 
+one login.</p></div>
+      </div>
+     </td>
+    </tr>
+   </tbody></table>
+   <div class="infotextForgotPassword">
+    <a href="https://my.jh.edu/portal/web/jhupub/login-firsttimejheduser">First time JHED User?</a>
+    &nbsp;
+    <a href="https://my.jh.edu/portal/web/jhupub/login-forgottenpassword">Forgot Password?</a>
+    &nbsp;
+    <a href="https://my.jh.edu/portal/web/jhupub/login-changepassword">Change Password?</a>
+    <br>
+    <a href="https://login.johnshopkins.edu/cgi-bin/allinonelogin.pl?BASIC=TRUE&amp;AUTHDB=PROD&amp;AUTHLEVEL=RISK&amp;RD=20120821&amp;TYPE=33554432&amp;REALMOID=06-83105949-5f2a-444a-a402-eb219b40dbba&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;SMAGENTNAME=-SM-XW1ryb4A86h9H5sR%2bFe7g%2fm9NnDy2YJDDcJT56Io2cbok5UX7A9gYAwgEqY%2baWNn&amp;TARGET=-SM-HTTP%3a%2f%2frestricted%2ehopkinsmedicine%2eorg%2fwebcenter%2ftraining%2f&amp;TIMESTRING=1491988516">Login Problems?</a>
+    &nbsp;
+    <a href="http://www.it.johnshopkins.edu/services/directoryservices/jhea/faq.html" target="_blank">Frequently Asked Questions</a>
+   </div>
+   <div id="legalese" align="center">
+    <span class="legaleseText nesting">Johns Hopkins Enterprise Authentication - <span id="lowerversionnum">v9.7.0a-23</span>
+    <br>
+    <a href="#" onclick="javascript: showDetailese();return false;">Use of the Johns Hopkins Enterprise Directory (JHED)</a>
+    <div id="detailsDiv" class="detailsese" style="display: none;">
+     Computer System shall be solely for the business purposes of the 
+Johns Hopkins Institutions. Unauthorized use may subject you to criminal
+ prosecution. Use of this system is monitored. Evidence of unauthorized 
+use collected during monitoring may be used for administrative, criminal
+ or adverse action. Use of this system constitutes consent to monitoring
+ for these purposes, and for any other purpose related to the business 
+interests of the Johns Hopkins Institutions, or as needed to protect 
+system resources.
+    </div>
+    </span>
+   </div>
+  </div>
+  <div id="Footer">
+   © 2017 Johns Hopkins Institutions. All rights reserved.
+   <!-- Wed Apr 12 05:15:18 2017 180.211.185.200 -->
+  </div>
+  <br>
+ </div>
+ <script language="JavaScript" type="text/javascript">
+  function getkey(e) {
+   if (window.event)
+    return window.event.keyCode;
+   else if (e)
+    return e.which;
+   else
+    return null;
+  }
+
+  function checkkey(e) {
+   var key;
+   key = getkey(e);
+   if (key == null) return true;
+   if (key == 13) {
+    buttonclick();
+   }
+  }
+
+  document.onkeydown = function(e) {
+   e = e || window.event;
+   k = e.which || e.charCode || e.keyCode;
+   if (k == 85 && e.altKey && e.ctrlKey && e.shiftKey) {
+    $("#USER").focus();
+   }
+   else {
+    return true;
+   }
+   return false;
+  }
+
+  function reauth() {
+    clearTimeout(authTimeout);
+   if (e('resultdiv').innerHTML == "Attempting Login....") { //on second
+ attempt
+    e('resultdiv').innerHTML = 'Attempting Login.....';
+    e('doit').value='';
+    logerror(['USER', 'AUTHDB'],[getkey],'POST');
+    e("Message").innerHTML = '<img 
+src=/login/images/delayed_login_header.gif width=394 height=37 
+border=0><br><div align=center><A 
+HREF="javascript:window.location.reload(true);">Please click here to 
+refresh your browser to correct the issue. If the error persists, please
+ contact the Help Desk at 410-735-HELP</A></div>';
+    Message.style.visibility = "visible";
+    e("mainLoginArea").style.opacity = ".5";
+    e("mainLoginArea").style.filter = "alpha(opacity=30)";
+   }
+   else {
+    e('resultdiv').innerHTML='Attempting Login....';
+    logdelay(['USER', 'AUTHDB'],[getkey],'POST');
+    authTimeout=setTimeout("reauth()",10000);
+    login(['USER', 'PASSWORD', 'ADBASEDN', 'AUTHDB', 'eatarget', 
+'authlevelform','fp5','os','osbits','timezone','display','useragent','browser','pluginsdetail','languages','fonts','flash','silverlight','java','cookies','NO_CACHE'],[submitform],'POST');
+
+   }
+  }
+ 
+  function buttonclick() {
+   if (e('doit').value == "doingit") {
+    beginanimation();
+   }
+   else {
+    e('doit').value='doingit';
+    beginanimation();
+    e('resultdiv').innerHTML='';
+    if (e('USER').value.indexOf("@") > -1) {
+     e('USER').value = e('USER').value.split("@")[0];
+    }
+    authTimeout = setTimeout("reauth()",10000);
+    login(['USER', 'PASSWORD', 'ADBASEDN', 'AUTHDB', 'eatarget', 
+'authlevelform','fp5','os','osbits','timezone','display','useragent','browser','pluginsdetail','languages','fonts','flash','silverlight','java','cookies','NO_CACHE'],[submitform],'POST');
+
+   }
+  }
+
+  function submitform() {
+   if (e('resultdiv').innerHTML != "Attempting Login.....") {
+   clearTimeout(authTimeout);
+   var argstring = arguments[0].toString();
+   var resultdivtext = ((arguments[0] != null) ? arguments[0].toString()
+ : "Successfully Authenticated.");
+   var success = ((arguments[1] != null) ? arguments[1].toString() : 
+"true");
+   var exptime = ((arguments[2] != null) ? arguments[2].toString() : 
+"null");
+   var token = ((arguments[3] != null) ? arguments[3].toString() : 
+"null");
+   var risk = ((arguments[4] != null) ? arguments[4].toString() : 
+"null");
+   var failstatus = ((arguments[5] != null) ? arguments[5].toString() : 
+"null");
+   if (resultdivtext == "") { resultdivtext = "Successfully 
+Authenticated."; }
+   if (success == "") { success = "true"; }
+   if (exptime == "") { exptime = "null"; }
+   if (token == "") { token = "null"; }
+   if (risk == "") { risk = "null"; }
+   if (token == "STEPUP") { document.loginform.action = 
+"https://login.johnshopkins.edu/cgi-bin/mfa1.pl?BASIC=FALSE&AUTHDB=PROD&AUTHLEVEL=RISK&RD=20120821&TYPE=33554432&REALMOID=06-83105949-5f2a-444a-a402-eb219b40dbba&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=-SM-XW1ryb4A86h9H5sR%2bFe7g%2fm9NnDy2YJDDcJT56Io2cbok5UX7A9gYAwgEqY%2baWNn&TARGET=-SM-HTTP%3a%2f%2frestricted%2ehopkinsmedicine%2eorg%2fwebcenter%2ftraining%2f&TIMESTRING=1491988516";
+ }
+   if (token == "BLOCKED") { resultdivtext = "Your account is blocked.";
+ success = "false"; exptime = "null"; }
+   if (token == "BLOCKED") { resultdivtext = "Your account is blocked.";
+ success = "false"; exptime = "null"; }
+    if (failstatus == "DBFAIL" )
+    {
+		resultdivtext = "Due to the system issues you cannot login at this 
+time."; 
+		success = "false"; 
+		e('doit').value = success;
+		showIssueWithDB();
+    		e('PASSWORD').value="";
+    		e('USER').value="";
+    		clearInterval(flashing);
+    		e('loginbutton').innerHTML='<button TYPE="button" id="submit1" 
+name="submit1" class="css3button gradient">Login</button>';
+		resultdiv.className = 'redLight';
+		e('resultdiv').innerHTML = resultdivtext;
+    }else{
+  		 if (resultdivtext == "AD Service Unavailable.") {
+    		resultdivtext = "AD Service Unavailable.";
+    		success = "false";
+    		exptime = "null";
+   		}
+   e('doit').value = success;
+   if (success == "false") {
+    e('PASSWORD').value="";
+    clearInterval(flashing);
+    e('loginbutton').innerHTML='<button TYPE="button" id="submit1" 
+name="submit1" class="css3button gradient">Login</button>';
+    e('PASSWORD').focus();
+    if (resultdivtext == "") {
+     showExpired();
+    }
+    else if (resultdivtext == "Please press back and login with 
+alternate ID.") {
+     showNewID(exptime);
+    }
+    else {
+     resultdiv.className = 'redLight';
+     e('resultdiv').innerHTML = resultdivtext;
+    }
+   }
+   else {
+    e('TOKEN').value = token;
+    e('RISK').value = risk;
+    resultdiv.className = 'greenLight';
+    e('resultdiv').innerHTML = resultdivtext;
+    if (exptime != "null") {
+	 document.title = "password expired: Johns Hopkins - Enterprise 
+Authentication"; 
+     showMessage(exptime);
+     clearInterval(flashing);
+     e('loginbutton').innerHTML='<button TYPE="button" id="submit1" 
+name="submit1" class="css3button gradient">Login</button>';
+     e('PASSWORD').focus();
+    }
+    else {
+     document.loginform.submit();
+    }
+   }
+}
+   }
+  }
+ </script>
+ <script language="JavaScript" type="text/javascript">
+  if ("false" == "true") {
+   var oldnow = new Date();
+   var oldsecs = oldnow.getTime() - 40000;
+   SetCookie('SMLoginPageLoadTime',oldsecs);
+   if 
+(("http://restricted.hopkinsmedicine.org/webcenter/training/".substr(0,33)
+ == "https://bluejay2.johnshopkins.edu") || 
+("http://restricted.hopkinsmedicine.org/webcenter/training/".substr(0,33)
+ == "https://incommon.johnshopkins.edu") || 
+("http://restricted.hopkinsmedicine.org/webcenter/training/".substr(0,32)
+ == "https://shibpep.johnshopkins.edu") || 
+("http://restricted.hopkinsmedicine.org/webcenter/training/".substr(0,36)
+ == "https://shibfriends.johnshopkins.edu") || 
+("http://restricted.hopkinsmedicine.org/webcenter/training/".substr(0,33)
+ == "https://epicshib.johnshopkins.edu") || 
+("http://restricted.hopkinsmedicine.org/webcenter/training/".substr(0,33)
+ == "https://alumshib.johnshopkins.edu") || 
+("http://restricted.hopkinsmedicine.org/webcenter/training/".substr(0,33)
+ == "https://testshib.johnshopkins.edu") || 
+("http://restricted.hopkinsmedicine.org/webcenter/training/".substr(0,35)
+ == "https://shibboleth.johnshopkins.edu")) {
+    e("Message").innerHTML = '<div align=center>You may have come here 
+from a bookmark of our login page.<BR><BR>We are unable to determine the
+ site you were trying to reach.<BR><BR>Please enter the URL of the site 
+you are trying to reach in your browser.<BR><BR>Bookmarking the login 
+page may cause errors.<BR><BR>Please only bookmark the URL of the site 
+after you have logged in.<BR><BR></div>'; }
+   else {
+    e("Message").innerHTML = '<div align=center>You may have come here 
+from a bookmark of our login page.<BR><BR>Are you trying to 
+access:<BR><BR><A 
+HREF="http://restricted.hopkinsmedicine.org/webcenter/training/">http://restricted.hopkinsmedicine.org/webcenter/training/</A><BR><BR>Bookmarking
+ the login page may cause errors.<BR><BR>Please only bookmark the URL of
+ the site after you have logged in.<BR><BR><A 
+HREF="http://restricted.hopkinsmedicine.org/webcenter/training/" 
+class=button>Click here to Continue</A><BR><BR></div>'; }
+   Message.style.visibility = "visible";
+   e("mainLoginArea").style.opacity = ".5";
+   e("mainLoginArea").style.filter = "alpha(opacity=30)";
+  }
+ </script>
+
+<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2013 Webtrends Inc.  All rights reserved. -->
+<!-- Version: 9.4.0 -->
+<!-- Tag Builder Version: 4.1  -->
+<!-- Created: 10/21/2013 3:09:32 PM -->
+<script src="Do%20Not%20Bookmark%20-%20Johns%20Hopkins%20Enterprise%20Authentication%20-%20v9.7.0a-23%20-%20Do%20Not%20Bookmark_files/webtrends.js" type="text/javascript"></script>
+<!-- ----------------------------------------------------------------------------------- -->
+<!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
+<!-- JavaScript include file can cause serious problems with cross-domain tracking.      -->
+<!-- ----------------------------------------------------------------------------------- -->
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script><script type="text/javascript" src="Do%20Not%20Bookmark%20-%20Johns%20Hopkins%20Enterprise%20Authentication%20-%20v9.7.0a-23%20-%20Do%20Not%20Bookmark_files/wtid.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" 
+src="//esgwtdc.nts.jhu.edu/dcst968nc10000w0yrf7joptg_2p6v/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.login.johnshopkins.edu"/></div>
+</noscript>
+<!-- END OF SmartSource Data Collector TAG -->
+ <!-- debugenv -->
+ 
+ <script type="text/javascript">
+//<![CDATA[
+var ajax = [];var cache;function pjx(args,fname,method) { 
+this.target=args[1]; this.args=args[0]; method=(method)?method:'GET'; 
+if(method=='post'){method='POST';} this.method = method; this.r=ghr(); 
+this.url = this.getURL(fname);}function formDump(){ var all = []; var fL
+ = document.forms.length; for(var f = 0;f<fL;f++){ var els = 
+document.forms[f].elements; for(var e in els){ var tmp = (els[e].id != 
+undefined)? els[e].id : els[e].name; if(typeof tmp != 
+'string'){continue;} if(tmp){ all[all.length]=tmp} } } return 
+all;}function getVal(id) { if (id.constructor == Function ) { return 
+id(); } if (typeof(id)!= 'string') { return id; } var element = 
+document.getElementById(id); if( !element ) { for( var i=0; 
+i<document.forms.length; i++ ){ element = 
+document.forms[i].elements[id]; if( element ) break; } if( element && 
+!element.type ) element = element[0]; } if(!element){ alert('ERROR: Cant
+ find HTML element with id or name: ' + id+'. Check that an element with
+ name or id='+id+' exists'); return 0; } if(element.type == 
+'select-one') { if(element.selectedIndex == -1) return; var item = 
+element[element.selectedIndex]; return item.value || item.text; } 
+if(element.type == 'select-multiple') { var ans = []; var k =0; for (var
+ i=0;i<element.length;i++) { if (element[i].selected || 
+element[i].checked ) { ans[k++]= element[i].value || element[i].text; } }
+ return ans; } if(element.type == 'radio' || element.type == 
+'checkbox'){ var ans =[]; var elms = 
+document.getElementsByTagName('input'); var endk = elms.length ; var i 
+=0; for(var k=0;k<endk;k++){ if(elms[k].type== element.type && 
+elms[k].checked && (elms[k].id==id||elms[k].name==id)){ 
+ans[i++]=elms[k].value; } } return ans; } if( element.value == undefined
+ ){ return element.innerHTML; }else{ return element.value; }}function 
+fnsplit(arg) { var url=""; if(arg=='NO_CACHE'){cache = 0; return "";}; 
+if((typeof(arg)).toLowerCase() == 'object'){ for(var k in arg){ url += 
+'&' + k + '=' + arg[k]; } }else if (arg.indexOf('__') != -1) { arga = 
+arg.split(/__/); url += '&' + arga[0] +'='+ encodeURIComponent(arga[1]);
+ } else { var res = getVal(arg) || ''; if(res.constructor != Array){ res
+ = [res] } else if( res.length == 0 ) { res = [ '' ] } for(var 
+i=0;i<res.length;i++) { url += '&args=' + encodeURIComponent(res[i]) + 
+'&' + arg + '=' + encodeURIComponent(res[i]); } } return 
+url;}pjx.prototype = { send2perl : function(){ var r = this.r; var dt = 
+this.target; if (dt==undefined) { return true; } 
+this.pjxInitialized(dt); var url=this.url; var postdata; 
+if(this.method=="POST"){ var idx=url.indexOf('?'); postdata = 
+url.substr(idx+1); url = url.substr(0,idx); } 
+r.open(this.method,url,true); ; if(this.method=="POST"){ 
+r.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+ r.send(postdata); } if(this.method=="GET"){ r.send(null); } 
+r.onreadystatechange = handleReturn; }, pjxInitialized : function(){}, 
+pjxCompleted : function(){}, readyState4 : function(){ var rsp = 
+decodeURIComponent(this.r.responseText); /* the response from perl */ 
+var splitval = '__pjx__'; /* to split text */ /* fix IE problems with 
+undef values in an Array getting squashed*/ rsp = 
+rsp.replace(splitval+splitval+'g',splitval+" "+splitval); var data = 
+rsp.split(splitval); dt = this.target; if (dt.constructor != Array) { 
+dt=[dt]; } if (data.constructor != Array) { data=[data]; } if 
+(typeof(dt[0])!='function') { for ( var i=0; i<dt.length; i++ ) { var 
+div = document.getElementById(dt[i]); if (div.type =='text' || 
+div.type=='textarea' || div.type=='hidden' ) { div.value=data[i]; } else
+ if (div.type =='checkbox') { div.checked=data[i]; } else { 
+div.innerHTML = data[i]; } } } else if (typeof(dt[0])=='function') { 
+dt[0].apply(this,data); } this.pjxCompleted(dt); }, getURL : 
+function(fname) { var args = this.args; var url= 'fname=' + fname; for 
+(var i=0;i<args.length;i++) { url=url + args[i]; } return url; 
+}};handleReturn = function() { for( var k=0; k<ajax.length; k++ ) { if 
+(ajax[k].r==null) { ajax.splice(k--,1); continue; } if ( 
+ajax[k].r.readyState== 4) { ajax[k].readyState4(); ajax.splice(k--,1); 
+continue; } }};var ghr=getghr();function getghr(){ if(typeof 
+XMLHttpRequest != "undefined") { return function(){return new 
+XMLHttpRequest();} } var msv= ["Msxml2.XMLHTTP.7.0", 
+"Msxml2.XMLHTTP.6.0", "Msxml2.XMLHTTP.5.0", "Msxml2.XMLHTTP.4.0", 
+"MSXML2.XMLHTTP.3.0", "MSXML2.XMLHTTP", "Microsoft.XMLHTTP"]; for(var 
+j=0;j<=msv.length;j++){ try { A = new ActiveXObject(msv[j]); if(A){ 
+return function(){return new ActiveXObject(msv[j]);} } } catch(e) { } } 
+return false;}function jsdebug(){ var tmp = 
+document.getElementById('pjxdebugrequest').innerHTML = "<br><pre>"; for(
+ var i=0; i < ajax.length; i++ ) { tmp += '<a href= '+ ajax[i].url +' 
+target=_blank>' + decodeURI(ajax[i].url) + ' <' + '/a><br>'; } 
+document.getElementById('pjxdebugrequest').innerHTML = tmp + "<" + 
+"/pre>";}function logdelay() { var args = logdelay.arguments; cache = 1;
+ for( var i=0; i<args[0].length;i++ ) { args[0][i] = 
+fnsplit(args[0][i]); } var l = ajax.length; ajax[l]= new 
+pjx(args,"logdelay",args[2]); ajax[l].url = 'allinonelogin.pl?' + 
+ajax[l].url; if ( cache == 0 ) { ajax[l].url = ajax[l].url + '&pjxrand='
+ + Math.random(); } ajax[l].send2perl(); ;}function logerror() { var 
+args = logerror.arguments; cache = 1; for( var i=0; i<args[0].length;i++
+ ) { args[0][i] = fnsplit(args[0][i]); } var l = ajax.length; ajax[l]= 
+new pjx(args,"logerror",args[2]); ajax[l].url = 'allinonelogin.pl?' + 
+ajax[l].url; if ( cache == 0 ) { ajax[l].url = ajax[l].url + '&pjxrand='
+ + Math.random(); } ajax[l].send2perl(); ;}function login() { var args =
+ login.arguments; cache = 1; for( var i=0; i<args[0].length;i++ ) { 
+args[0][i] = fnsplit(args[0][i]); } var l = ajax.length; ajax[l]= new 
+pjx(args,"login",args[2]); ajax[l].url = 'allinonelogin.pl?' + 
+ajax[l].url; if ( cache == 0 ) { ajax[l].url = ajax[l].url + '&pjxrand='
+ + Math.random(); } ajax[l].send2perl(); ;}
+//]]>
+</script>
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+ 
+ 
+</body></html>

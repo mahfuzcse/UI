@@ -1,0 +1,25 @@
+.navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+      background-color: #4CAF50;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    div.img{
+    	width: 35px;
+    	height: 60px;
+    	padding: 20px;
+    }
+    div.form-inline{
+    	float: right;
+    }

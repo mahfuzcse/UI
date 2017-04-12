@@ -1,0 +1,286 @@
+/* 
+
+THIS IN AN EXTERNAL STYLESHEET
+
+these style are to be used to control
+layout and styles specific only to the
+'responsive_landing' template 
+
+*/
+
+.jsBannerContainerWrapper {width:100%;height:auto;display:block;background:url(http://hopkinsmedicine.org/sebin/a/v/loading.gif) no-repeat 50%;float:left;clear:both;}
+.jsBanner {width:100% !important;height:auto !important;}
+.jsBanner .banner-image {width:100% !important;height:auto !important;padding: 0 0 48% 0;}
+.jsBanner .slide {position:relative;}
+.jsBanner .img {width:100% !important;max-width:100%;height:auto !important;}
+.jsBanner .banner-nav {position:absolute !important;right:17px !important;bottom:79px !important;}
+.jsBanner .box {opacity:1 !important;width:20px !important;height:20px !important;background:url(http://hopkinsmedicine.org/sebin/p/u/slide-nav.png) transparent no-repeat 0 -20px !important;display:block !important;float:left !important;text-indent:-9999px !important;position:relative !important;top:0 !important;margin:0 0 0 2px !important;}
+.jsBanner .selected {background:url(http://hopkinsmedicine.org/sebin/p/u/slide-nav.png) no-repeat 0 0 !important;top:-2px !important;}
+.flexOneCol {float:left;padding: 0 0 25px 0;width:100%;}
+#buckets {padding:14px 7px 0 7px;float:left;margin:-70px 0 0 0;width:980px;}
+.bucket {width:189px;float:left;display:inline;border:1px solid #fff;border-bottom:0 none;box-shadow:0px -10px 10px rgba(0,0,0,.3);background:url(http://hopkinsmedicine.org/sebin/s/g/bucket.gif) repeat-x 0 0;padding:15px;margin:0 12px;position:relative;}
+.bucket h3 {font:1.3em/1.3em 'Gills Sans', sans-serif;color:#00276f;margin:0 0 10px 0;padding:0;}
+.bucket .figure {margin:0;}
+.bucket .figure img {border:1px solid #fff;box-shadow:0px 0px 10px rgba(0,0,0,.4);margin: 0 0 10px 0;max-width:100%;}
+.bucket .figcaption {font-size:1em;line-height:1.5em;color:#555;margin:0 0 .6em 0;}
+.bucket .more-btn {font-size: 1.125em;line-height: 1.2em;color: #fff;padding: .55em .65em;background: #8291AC;border: none;border-radius: 4px;font-family: 'Gill Sans', 'Gill Sans MT', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight: 100;float:left;display: block;text-decoration:none;cursor:pointer;}
+.bucket .more-btn:active {background: #f4eecf;}
+.landing-content {width:1000px;clear:both;float:left;}
+.resources-flex {width: 221px;margin:0 14px 0 15px;float:left;}
+.news-events-flex {width: 460px;margin:0 15px;float:left;}
+.quicklinks-flex {width: 221px;margin:0 18px 0 15px;float:left;}
+.resources-flex ul, .news-events-flex ul, .quicklinks-flex ul {padding:0;list-style:none;margin:0;}
+.resources-flex a, .news-events-flex a {color:#214a9a;}
+.resources-flex li {clear:both;width:100%;list-style:disc inside;}
+.resources-flex a {margin:4px 3px 2px 0;padding:0.5em 23px 0.5em 0;text-decoration: underline;display: inline-block;}
+.news-events-flex a {text-decoration:none;}
+.news-events-flex li {margin: 0 0 .75em 0;}
+.news-events-flex p a {text-decoration:underline;}
+.news-events-flex h5 {margin:1.3em 0 .4em 0;}
+.news-events-flex p {margin:0;font-size:1em;line-height:1.6em;}
+.quicklinks-flex ul {width:100%;border-top:1px solid #e4e4e4;border-bottom:1px solid #fff;margin:0;}
+.quicklinks-flex li {width:100%;border-top:1px solid #fff;border-bottom:1px solid #e4e4e4;padding:0;margin:0;}
+.quicklinks-flex li a {padding:.4em 0 .4em 3em;display:block;font-weight:200;color:#666;font-size:1.2em;line-height:1.3em;text-decoration:none;}
+.quicklinks-flex li.find-doctor a {background:url(http://hopkinsmedicine.org/sebin/k/c/quicklinks-doctor.gif) no-repeat 0 50%;background-size:1.7em 1.7em;}
+.quicklinks-flex li.request-appointment a {background:url(http://hopkinsmedicine.org/sebin/a/p/quicklinks-apppointment.gif) no-repeat 0 50%;background-size:1.7em 1.7em;}
+.quicklinks-flex li.refer-patient a {background:url(http://hopkinsmedicine.org/sebin/o/w/quicklinks-refer.gif) no-repeat 0 50%;background-size:1.7em 1.7em;}
+.quicklinks-flex li.apply-job a {background:url(http://hopkinsmedicine.org/sebin/c/o/quicklinks-job.gif) no-repeat 0 50%;background-size:1.7em 1.7em;}
+.quicklinks-flex li.make-gift a {background:url(http://hopkinsmedicine.org/sebin/q/p/quicklinks-gift.gif) no-repeat 0 50%;background-size:1.7em 1.7em;}
+.quicklinks-flex li.pay-bill a {background:url(http://hopkinsmedicine.org/sebin/w/q/quicklinks-bill.gif) no-repeat 0 50%;background-size:1.7em 1.7em;}
+.quicklinks-flex li.second-opinion a {background:url(http://hopkinsmedicine.org/sebin/s/e/quicklinks-opinion.gif) no-repeat 0 50%;background-size:1.7em 1.7em;}
+.quicklinks-flex li.patient-relations a {background:url(http://hopkinsmedicine.org/sebin/e/v/quicklinks-patient.gif) no-repeat 0 50%;background-size:1.7em 1.7em;}
+.quicklinks-flex li.mychart a {background:url(http://hopkinsmedicine.org/sebin/m/d/quicklinks-mychart.gif) no-repeat 0 50%;background-size:1.7em 1.7em;}
+
+.landing-content-new {width: 96%;padding: 2%;background: #f0f2f4;clear: both;float: left;margin: 1em 0 0 0;}
+.landing-content-new .search-quicklinks {float: left;width: 66%;border-right: 1px solid #cacdd1;padding: 0 3% 0 0;margin: 0 3% 0 0;}
+.landing-content-new .find-doc, .landing-content-new .health-lib {float: left;width: 48%;}
+.landing-content-new .find-doc {margin: 0 2% 0 0;}
+.landing-content-new .health-lib {margin: 0 0 0 2%;}
+.landing-content-new h3 {margin-bottom: .25em;text-transform: uppercase;color: #fff;font-family: 'Gill Sans', 'Gill Sans MT', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 1.5em;line-height: 1.125em;font-weight: normal;font-weight: 100;color: #2e3645;}
+.landing-content-new h3 span {color: #6c7279;}
+.landing-content-new p {color: #585b5e;font-size: 1em;}
+.landing-content-new form input[type="text"] {width: 65%;font-size: 1.125em;color: #666;padding: .55em .65em;background: #fff;border: 1px solid #D2D5DB;border-radius: 4px;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;line-height:1.2;}
+.landing-content-new form input[type="submit"] {width: 3em;font-size: 1.125em;line-height: .8em;color: #00276f;padding: .55em .65em;background: #ffd101;border: none;border-radius: 4px;font-family: 'Gill Sans', 'Gill Sans MT', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight: 100;height: 2.6em;text-decoration: none;cursor: pointer;-webkit-appearance: none;}
+.landing-content-new .quicklinks {width: 100%;float: left;clear: both;margin: 3em 0 1em;}
+.landing-content-new .quicklinks ul {font-weight:bold;text-align:center;margin-bottom:4%; float:left;padding-left:0;width:100%;list-style-type:none;}
+.landing-content-new .quicklinks li {float:left;width:14.25%;margin:0 1%;}
+.landing-content-new .quicklinks li a {text-decoration:none;color:#00276f;}
+.landing-content-new .quicklinks li a:hover {text-decoration:underline;}
+.landing-content-new .quicklinks li .ql-icons {margin: 10px auto;width: 35px;}
+.landing-content-new .quicklinks li .ql-icons img {max-width:100%;;}
+.landing-content-new .resources {width: 27%;float: left;}
+.landing-content-new .resources ul {padding: 0;margin: 0;list-style: none;}
+.landing-content-new .resources ul li {width: 100%;clear: both; list-style: disc inside;margin: 0;}
+.landing-content-new .resources ul li a {margin: 2px 3px 2px 0;padding: 0.25em 23px 0.25em 0;text-decoration: underline;display: inline-block;}
+.autocomplete {overflow-y: scroll;background: #fff;margin: 2px 1px;padding: 0 9px 10px;font-size: 1.5em;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;color: #666;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px;box-shadow: 5px 5px 7px rgba(0,0,0,.1)}
+.autocomplete div {padding: 4px 0;cursor: pointer;}
+.autocomplete div.selected {background: #eee;padding: 4px 6px;margin: 0 0 0 -6px;border-radius: 3px;width: 100%;}
+.autocomplete-suggestions {overflow-y: scroll;background: #fff;margin: 0 9px;padding: 0 19px 10px;font-size: 1.5em;font-family: 'Gill Sans', 'Gill Sans MT', 'Helvetica Neue', Helvetica, Arial, sans-serif;color: #4c689a;font-weight: 300;border-bottom-right-radius: 7px;border-bottom-left-radius: 7px;box-shadow: 5px 5px 7px rgba(0,0,0,.1)}
+.autocomplete-suggestions .autocomplete-suggestion {padding: 4px 0;cursor: pointer;}
+.autocomplete-suggestions .autocomplete-suggestions .autocomplete-selected {background: #eee;padding: 4px 6px;margin: 0 0 0 -6px;border-radius: 3px;width: 100%;}
+
+.addthis_wrapper_landing {position:absolute !important;padding:3px;top:-45px;right:-3px;}
+.addthis_toolbox {width:50px;background:#fff;padding:5px;border-radius:3px;box-shadow:0 0 5px #0d2d71;}
+.addthis_button_facebook_like, .addthis_button_tweet, .addthis_button_google_plusone {display:none;}
+.addthis_counter {float:left;}
+
+/*  New styles for latest  */
+
+.landing-content-latest {width: 96%;padding: 2%;background: #f0f2f4;clear: both;float: left;margin: 1em 0 0 0;}
+.landing-content-latest .search-quicklinks {float: left;width: 66%;border-right: 1px solid #cacdd1;padding: 0 3% 0 0;margin: 0 3% 0 0;}
+.landing-content-latest .find-doc, .landing-content-new .health-lib {float: left;width: 48%;}
+.landing-content-latest .find-doc {margin: 0 2% 0 0;}
+.landing-content-latest .health-lib {margin: 0 0 0 2%;}
+.landing-content-latest h3 {margin-bottom: .25em;text-transform: uppercase;color: #fff;font-family: 'Gill Sans', 'Gill Sans MT', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 1.5em;line-height: 1.125em;font-weight: normal;font-weight: 100;color: #2e3645;}
+.landing-content-latest h3 span {color: #6c7279;}
+.landing-content-latest p {color: #585b5e;font-size: 1em;}
+.landing-content-latest form input[type="text"] {width: 72%;font-size: 1.125em;color: #666;padding: .55em 3%;background: #fff;border: 1px solid #D2D5DB;border-radius: 4px;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;line-height:1.2;}
+.landing-content-latest form input[type="submit"] {width: 19%;font-size: 1.125em;line-height: .8em;color: #00276f;padding: .55em 3%;background: #ffd101;border: none;border-radius: 4px;font-family: GillSansRegular,"Gill Sans MT", "Gill Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;font-weight: 100;height: 2.6em;text-decoration: none;cursor: pointer;-webkit-appearance: none;}
+.landing-content-latest .quicklinks {width: 100%;float: left;clear: both;margin: 4em 0 2em 0;}
+.landing-content-latest .quicklinks ul {font-weight:bold;margin-bottom:0; float:left;padding-left:0;width:100%;list-style-type:none;text-align: left;font-family:GillSansRegular,"Gill Sans MT", "Gill Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;font-weight: 100;font-size: 1.125em;line-height:1em;}
+
+.landing-content-latest .quicklinks li a {text-decoration: none;color: #00276f;float: left;width: 74.5%;margin: 0;padding: 10px .5% 5px 25%;border: 2px solid #ccc;
+border-radius: 5px;min-height: 39px;line-height: 1.25em;
+background: url(http://www.hopkinsmedicine.org/patient_care/_images/landing_page/make_a_gift_ql_icon.png) no-repeat 5px 10px;
+background-size: 24px 28px;}
+.landing-content-latest .quicklinks li a:hover {background:#fff url(http://www.hopkinsmedicine.org/patient_care/_images/landing_page/make_a_gift_ql_icon.png) no-repeat 5px 10px;background-size: 24px 28px;}
+
+.landing-content-latest .quicklinks li a.seminar-icon {background:url(http://www.hopkinsmedicine.org/sebin/f/j/appointment_ql_icon.png) no-repeat 5px 10px;background-size: 24px 28px;}
+.landing-content-latest .quicklinks li a.trials-icon {background:url(http://www.hopkinsmedicine.org/sebin/p/o/location_ql_icon.png) no-repeat 5px 10px;background-size: 24px 28px;}
+.landing-content-latest .quicklinks li a.phone-icon {background:url(http://www.hopkinsmedicine.org/sebin/r/x/phone_ql_icon.png) no-repeat 5px 10px;background-size: 24px 28px;}
+.landing-content-latest .quicklinks li a.record-icon {background:url(http://www.hopkinsmedicine.org/sebin/r/f/mychart_ql_icon.png) no-repeat 5px 10px;background-size: 24px 28px;}
+.landing-content-latest .quicklinks li a.bill-icon {background:url(http://www.hopkinsmedicine.org/sebin/t/g/bill_ql_icon.png) no-repeat 5px 10px;background-size: 24px 28px;}
+.landing-content-latest .quicklinks li a.gift-icon {background:url(http://www.hopkinsmedicine.org/sebin/j/p/make_a_gift_ql_icon.png) no-repeat 5px 10px;background-size: 24px 28px;}
+
+.landing-content-latest .quicklinks li a.seminar-icon {background:url(http://www.hopkinsmedicine.org/sebin/t/c/appointment_ql_icon_sm.png) no-repeat 5px 10px\9;}
+.landing-content-latest .quicklinks li a.trials-icon {background:url(http://www.hopkinsmedicine.org/sebin/z/n/phone_ql_icon_sm.png) no-repeat 5px 10px\9;}
+.landing-content-latest .quicklinks li a.phone-icon {background:url(http://www.hopkinsmedicine.org/sebin/l/u/location_ql_icon_sm.png) no-repeat 5px 10px\9;}
+.landing-content-latest .quicklinks li a.record-icon {background:url(http://www.hopkinsmedicine.org/sebin/n/j/mychart_ql_icon_sm.png) no-repeat 5px 10px\9;}
+.landing-content-latest .quicklinks li a.bill-icon {background:url(http://www.hopkinsmedicine.org/sebin/b/x/bill_ql_icon_sm.png) no-repeat 5px 10px\9;}
+.landing-content-latest .quicklinks li a.gift-icon {background:url(http://www.hopkinsmedicine.org/sebin/v/b/make_a_gift_ql_icon_sm.png) no-repeat 5px 10px\9;}
+
+.landing-content-latest .resources {width: 27%;float: left;}
+.landing-content-latest .resources ul {padding: 0;margin: 0 0 2em 0;list-style: none;}
+.landing-content-latest .resources ul li {width: 100%;clear: both; list-style: disc inside;margin: 0;}
+.landing-content-latest .resources ul li a {margin: 2px 3px 2px 0;padding: 0.25em 23px 0.25em 0;text-decoration: underline;line-height: 24px;}
+
+.landing-content-latest {background: #fff;width:100%;padding:0;}
+.landing-content-latest .search-quicklinks {float: left;width: 96%;border-right: none;padding: 2%;margin: 0 0 3% 0;background: #f0f2f4;}
+
+.landing-content-latest .find-doc, .landing-content-latest .health-lib, .landing-content-latest .departments {width: 32%;float:left;}
+.landing-content-latest .find-doc, .landing-content-latest .health-lib {margin: 0 2% 0 0;}
+.landing-content-latest .find-doc p, .landing-content-latest .health-lib p, .landing-content-latest .departments p {min-height: 36px;}
+
+.news-resources {width:96%;padding:2%;padding: 0 2%;float: left;margin: 0 0 1em 0;}
+.news-section {float: left;width: 68%;margin: 0 3% 0 0;padding: 0;}
+
+.landing-content-latest .resources {padding: 0 0 0 4%;border-left: 1px #ccc solid;width: 24%;}
+.landing-content-latest .news-resources h3 {text-transform:none;margin: 0 0 .6em 0;}
+.landing-content-latest .quicklinks li .ql-icons {float: left;margin:5px;}
+
+
+.more-btn {font-size: 1.125em;line-height: 1.2em;color: #fff;padding: .55em .65em;background: #8291AC;border: none;border-radius: 4px;font-family:GillSansRegular,"Gill Sans MT", "Gill Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;font-weight: 100;float: left;display: block;text-decoration: none;cursor: pointer;}
+
+a.more-btn:link {color:#e7e9eb;}
+a.more-btn:visited {color:#e7e9eb;}
+
+.landing-content-latest .quicklinks li {line-height: 1.25em;width: 15.65%;
+float: left;
+margin: 0 1% 0 0;}
+.landing-content-latest .quicklinks li .ql-icons {margin: 0 4% 0 0;width: 25px;}
+.landing-content-latest .departments .select {width: 97%;float: left;position: relative;}
+
+
+.styled-select {
+background: url(/sebin/h/s/drop_down_arrow.png) no-repeat 100% 0 #fff;
+height: 42px;
+overflow: hidden;
+width: 100%;
+border-radius: 6px;
+}
+
+.styled-select select {background: transparent;
+border: none;
+font-size: 14px;
+height: 42px;
+padding: 0;
+overflow: hidden;
+width: 110%;
+line-height: 1;
+border-radius: 6px;
+border: 1px solid #cbd0d4;
+font-family: GillSansRegular,"Gill Sans MT", "Gill Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;}
+
+.landing-content-latest form input[type="submit"] {height: 41px;width: 19%;}
+.landing-content-latest form input[type="text"] {height: 25px;border: 1px solid #cbd0d4;width:72%;}
+
+
+
+
+.landing-content-latest .quicklinks li a.last {margin:0;}
+
+@media screen and (min-width: 1235px) {
+.addthis_wrapper_landing {display:block;position:absolute;top:1px;right:-10px;}
+.addthis_toolbox {position:fixed !important;width:90px;background:#fff;padding:5px;border-radius:3px;box-shadow:0 0 5px #0d2d71;}
+.addthis_button_facebook_like {display:block;height:20px;padding:0 0 3px 0 !important;float:left;clear:both;}
+.addthis_button_tweet, .addthis_button_google_plusone {display:block;clear:both;padding: 3px 0 !important;float:left;}
+.addthis_counter {clear:both;padding: 3px 0 0 0 !important;float:left;}
+}
+
+@media screen and (max-width: 1004px) {
+#buckets {width:98%;padding:14px 1% 0;}
+.bucket {width:21%;padding:1%;margin:0 1%;border:0;}
+.landing-content {width:96%;padding:0 2%;}
+.resources-flex {width: 23%;margin:0 3% 0 0;}
+.news-events-flex {width: 48%;margin:0;}
+.quicklinks-flex {width: 23%;margin:0 0 0 3%;}
+.landing-content-new .find-doc, .landing-content-new .health-lib {width: 100%;margin: 0;}
+.landing-content-new .find-doc {margin: 0 0 3em 0;}
+}
+
+@media screen and (max-width: 940px) {
+
+.landing-content-latest .quicklinks li {width: 31.25%;margin: 0 2% 2% 0;}
+.landing-content-latest .quicklinks ul {font-size: 1.25em;}
+.landing-content-latest .quicklinks li .ql-icons {width: 33px;}
+
+.landing-content-latest .quicklinks li a.seminar-icon {background:url(http://www.hopkinsmedicine.org/sebin/f/j/appointment_ql_icon.png) no-repeat 10px 10px;background-size: 27px 31px;}
+.landing-content-latest .quicklinks li a.trials-icon {background:url(http://www.hopkinsmedicine.org/sebin/p/o/location_ql_icon.png) no-repeat 10px 10px;background-size: 27px 31px;}
+.landing-content-latest .quicklinks li a.phone-icon {background:url(http://www.hopkinsmedicine.org/sebin/r/x/phone_ql_icon.png) no-repeat 10px 10px;background-size: 27px 31px;}
+.landing-content-latest .quicklinks li a.record-icon {background:url(http://www.hopkinsmedicine.org/sebin/r/f/mychart_ql_icon.png) no-repeat 10px 10px;background-size: 27px 31px;}
+.landing-content-latest .quicklinks li a.bill-icon {background:url(http://www.hopkinsmedicine.org/sebin/t/g/bill_ql_icon.png) no-repeat 10px 10px;background-size: 27px 31px;}
+.landing-content-latest .quicklinks li a.gift-icon {background:url(http://www.hopkinsmedicine.org/sebin/j/p/make_a_gift_ql_icon.png) no-repeat 15px 10px;background-size: 27px 31px;}
+
+
+.landing-content-latest .quicklinks li a {padding: 10px 2% 5px 25%;width: 73%;}
+}
+
+
+@media screen and (max-width: 740px) {
+#buckets {width: 92%;padding: 2% 4%;margin:0;}
+.bucket {width:46%;padding:0;box-shadow:none;margin:0 2% 30px;background:none;}
+.landing-content {width:96%;padding:0 2%;}
+.resources-flex, .news-events-flex, .quicklinks-flex {width:100%;margin:1em 0 0 0;border-top:1px solid #e4e4e4;}
+.quicklinks-flex ul {border:none;margin:1em 0 0 0;}
+.quicklinks-flex li {border:1px solid #e4e4e4;margin:0 0 .5em 0;}
+.quicklinks-flex li a {padding:.6em 0 .6em 2em;}
+.landing-content-new .search-quicklinks {width: 60%;}
+.landing-content-new .quicklinks li {width: 31.25%;margin: 3% 1%;min-height: 110px;}
+.landing-content-new .resources {width: 33%;}
+.landing-content-new .resources ul li {margin: 1em 0;}
+.landing-content-new .resources ul li a {padding-left: 0;padding-right: 0;margin-left: 0;margin-right: 0; background: none;display: inline;}
+
+.landing-content-latest .find-doc, .landing-content-latest .health-lib, .landing-content-latest .departments {width: 45%;float: left;margin: 0 0 30px 0;}
+.landing-content-latest .find-doc {margin-right:5%;}
+.landing-content-latest form input[type="text"] {width: 72%;}
+.landing-content-latest form input[type="submit"] {width: 20%;}
+.news-section {width: 54%;}
+.landing-content-latest .resources {width:38%;}
+}
+
+
+@media screen and (max-width: 610px) {
+	.landing-content-latest .search-quicklinks, .news-resources {width: 92%;padding: 4%;}
+.landing-content-latest .quicklinks li {width: 48%;}
+.landing-content-latest .quicklinks li:nth-child(even) {margin-right:0;}
+.news-section {width: 100%;margin: 0 0 3% 0;}
+.landing-content-latest .resources {padding: 0;border-left: none;width: 100%;margin: 20px 0;}
+.landing-content-latest .find-doc, .landing-content-latest .health-lib, .landing-content-latest .departments {width: 100%;float: left;margin: 0 0 30px 0;}
+.landing-content-latest form input[type="text"] {width: 72%;}
+.landing-content-latest form input[type="submit"] {width: 20%;}
+.landing-content-latest .quicklinks li a {padding: 10px 2% 5px 23%;width:75%;}
+}
+
+@media screen and (max-width: 580px) {
+.landing-content-new {padding: 5% 2%;}
+.landing-content-new .search-quicklinks {float: left;width: 100%;border-right: none;padding: 0;margin: 0;clear: both;}
+.landing-content-new .resources {float: left;width: 100%;clear: both;}
+
+.bucket {width: 100%;margin: 0 0 30px;}
+.bucket .figure img {max-width: 50%;float: left;margin: 0 3% 10px 0;}
+.bucket .figcaption {float: left;width: 46%;}
+
+.jsBanner .banner-nav {bottom: 5px !important;}
+
+}
+
+@media screen and (max-width: 480px) {
+.landing-content-latest .quicklinks li {margin: 0 0 1% 0;padding: 0 0 3% 0;width: 98%;}
+.landing-content-latest .quicklinks li a {padding: 10px .5% 5px 20%;width:80%;}
+.landing-content-latest .search-quicklinks {width: 92%;padding: 4%;}
+.news-resources {padding: 0 4%;}
+}
+
+
+
+
+/*@media screen and (max-width: 480px) {
+#buckets {width:98%;padding:2% 1% 0;margin:0;}
+.bucket {width:48%;padding:0;box-shadow:none;margin:0 1% 30px;background:none;}
+.landing-content {width:96%;padding:0 2%;}
+.resources-flex, .news-events-flex, .quicklinks-flex {width:100%;margin:1em 0 0 0;border-top:1px solid #e4e4e4;}
+.quicklinks-flex {width:100%;padding:0 1%;}
+.quicklinks-flex li {border:1px solid #e4e4e4;margin:0 0 .5em 0;width:50%;margin:}
+.quicklinks-flex li a {padding:.6em 0 .6em 2em;}
+}
+

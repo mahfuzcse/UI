@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Order</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+    /* Remove the navbar's default rounded borders and increase the 
+bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+      background-color: #4CAF50;
+    }
+   
+    select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+    
+    form{
+    	float: right;
+    }
+
+    .form-inline2
+    {
+      float: left;
+    }
+    
+
+    div.form-group{  
+     padding: 30px;
+    }
+
+    div.form-group2{
+      
+     padding: 30px;
+    }
+    
+    footer {
+      background-color: #4CAF50;
+      padding: 104px;
+      width: 100%;
+
+    }
+  </style>
+</head>
+<body>
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Online Store</h1>      
+    <p>Mission, Vission & Values</p>
+  </div>
+  <form class="form-inline">
+    <input type=" " class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Seaech</button>
+  </form>
+
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" 
+data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                      
+  
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a 
+href="#">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="#">Stores</a></li>
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon 
+glyphicon-user"></span> Registration</a></li>
+        <li><a href="#"><span class="glyphicon 
+glyphicon-shopping-cart"></span> News</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+        <form class="form-inline">
+    
+                  <div class="form-group">
+                    <label for="Src-med">Search & select medicine:</label>
+                    <input type="Src-med" class="form-control" id="Src-med" placeholder="Search medicine">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="slct-med">Selected medicine:</label>
+                    <input type="text" class="form-control" id="txt" placeholder="Selected medicine">
+                  </div>
+                  
+                  <button type="submit" class="btn btn-default">Medicine cost: </button>
+                  <input type="output-text" class="form-control" id="txt" placeholder="cost">
+        </form>
+
+        <form class="form-inline2">
+                 <div class="form-group2">
+                    <label for="sel-branch">Select branch:</label>
+                    <select id="country" name="country">
+                    <option value="Raj">Rajshahi</option>
+                    <option value="dh">Dhaka</option>
+                    <option value="rp">Rangpur</option>
+                    
+                    <option value="kh">Khulna</option>
+                  </select>
+                  </div>
+       
+                  <div class="form-group2">
+                     <label for="sel-loca">Select location: </label>
+                     <select id="town" name="town">
+                            <option value="Raj">RU-campus</option>
+                            <option value="dh">RUET-campus</option>
+                            <option value="rp">RMC-campus</option>                   
+                            <option value="kh">Uposhohor</option>
+                            <option value="kh">Banessar</option>
+                            
+                  </select><p>km(per km 50 Tk)</p>
+                  </div>
+
+                  <div>
+                      <button type="submit" class="btn btn-default">Carrying cost: </button>
+                      <input type="output-text" class="form-control" id="txt" placeholder="cost">
+                  </div>
+
+                  <div>
+                    <div class="form-group2">
+                    <label for="sel-branch">Select delivery date:</label>
+                    <select id="country" name="country">
+                           <option value="date">dd/mm/yyyy</option>                        
+                    </select>
+                  </div>
+                  
+                  <div>
+                  <h4>Total cost: </h4>
+                      <input type="output-text" class="form-control" id="txt" placeholder=" medicine & carrying cost">
+                 </div>
+ 
+                  <button type="button" class="btn btn-primary btn-lg">Payment</button>
+         </form>
+
+
+</div>
+</div>
+
+
+
+
+<footer class="container-fluid text-center">
+   
+  
+</footer>
+</body>
+</html>
